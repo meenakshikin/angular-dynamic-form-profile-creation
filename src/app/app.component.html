@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-header">Profile</div>
+    <div class="card-body">
+      <sh-dynamic-form-builder
+        [config]="config"
+        [isSubmit]="isSubmit"
+        [formValue]="formValue"
+        (submit)="submit($event)"
+        (cancel)="cancel()"
+      ></sh-dynamic-form-builder>
+    </div>
+  </div>
+</div>
+<pre>
+  {{ formGroup.value | json }}
+</pre>
